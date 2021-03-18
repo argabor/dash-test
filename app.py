@@ -39,7 +39,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css', dbc.themes
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 if DESKTOP_APP:
-    ui = DashUI(app, app_name='DashUI test', showMaximized=False) # Create a DashUI instance
+    ui = DashUI(app, app_name='DashUI test', showMaximized=False, icon_path='sample_icon.png') # Create a DashUI instance
 
 from pyorbital.orbital import Orbital
 satellite = Orbital('TERRA')
